@@ -43,7 +43,7 @@ The programming environment includes a source-level debugger, a mechanism for pr
 %autosetup -n ChezScheme-%{version} -p 1
 
 %build
-./configure --installschemename=chez --installscriptname=chez-script --install --installbin=%{_bindir} --installlib=%{_libdir} --installman=%{_mandir} --temproot=%{buildroot} --threads
+./configure --installschemename=chez --installscriptname=chez-script --installbin=%{_bindir} --installlib=%{_libdir} --installman=%{_mandir} --temproot=%{buildroot} --threads
 make CFLAGS=-w
 
 %install
@@ -51,8 +51,8 @@ make CFLAGS=-w
 
 %files
 %{_bindir}/petite
-%{_bindir}/scheme
-%{_bindir}/scheme-script
+%{_bindir}/chez
+%{_bindir}/chez-script
 %{_libdir}/csv%{version}/*
 %{_mandir}/man1/*.1.*
 
