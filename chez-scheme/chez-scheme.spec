@@ -3,7 +3,7 @@
 
 Name:           chez-scheme
 Summary:        Chez Scheme is an efficient and reliable implementation of Scheme based on an incremental optimizing compiler that produces efficient code and does so quickly. 
-Version:        9.5.4-1
+Version:        9.5.4
 Release:        1%{?dist}
 URL:            http://cisco.github.io/ChezScheme
 License:        Apache-2.0
