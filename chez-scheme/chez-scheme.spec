@@ -3,7 +3,7 @@
 
 Name:           chez-scheme
 Summary:        Chez Scheme is an efficient and reliable implementation of Scheme based on an incremental optimizing compiler that produces efficient code and does so quickly. 
-Version:        9.5.4
+Version:        9.5.4-1
 Release:        1%{?dist}
 URL:            http://cisco.github.io/ChezScheme
 License:        Apache-2.0
@@ -57,6 +57,9 @@ make CFLAGS=-w
 %{_mandir}/man1/*.1.*
 
 %changelog
+* Fri Nov 26 2021 Greg Werbin <outthere@me.gregwerbin.com> - 9.5.4-1
+- Changed binary name from "scheme" and "scheme-script" to "chez" and "chez-script".
+
 * Fri Nov 20 2020 Quentin Dufour <quentin@dufour.io> - 9.5.4
 - Upgrade sources from 9.5.2 to 9.5.4 (there is no 9.5.3 release on github). Changelog is available here: https://github.com/cisco/ChezScheme/blob/v9.5.4/LOG 
 
